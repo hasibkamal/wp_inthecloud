@@ -3,7 +3,8 @@
                     <h2>Primay Menu</h2>
                     <?php 
                         wp_nav_menu([
-                            'theme_location'=>'primary'
+                            'theme_location'=>'primary',
+                            'walker'=> new CustomNavWalker()
                         ]); 
                     ?>
                 </div>

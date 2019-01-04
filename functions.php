@@ -23,3 +23,5 @@ function inthecloudScripts(){
 }
 
 add_action('wp_enqueue_scripts','inthecloudScripts');
+
+require_once('CustomNavWalker.php');
