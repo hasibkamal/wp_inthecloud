@@ -2,6 +2,7 @@
     <?php while(have_posts()):the_post(); ?>
     <div class="maincol">
         <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+        <p>Custom Data : <?php echo get_post_meta(get_the_id(),'hkc',true); ?></p>
 
         <p>
         	<?php
